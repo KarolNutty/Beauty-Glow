@@ -26,22 +26,11 @@
 ## 📸 Screenshots
 
 ### 🖥️ Desktop
-![Desktop Preview](./screenshots/desktop-home.png)
+![Desktop Preview](./screens/desktop-home.png)
 *Página inicial desktop com banner e produtos em destaque*
 
-![Desktop Products](./screenshots/desktop-produtos.png)
+![Desktop Products](./screens/desktop-produtos.png)
 *Seção de produtos com efeitos glassmorphism*
-
-### 📱 Mobile
-<div align="center">
-  <img src="./screenshots/mobile-home.png" width="300" alt="Mobile Home" />
-  <img src="./screenshots/mobile-produtos.png" width="300" alt="Mobile Products" />
-</div>
-*Interface móvel otimizada e responsiva*
-
-### ✨ Animações
-![Animações](./screenshots/animacoes.gif)
-*Efeitos hover e transições suaves*
 
 ---
 
@@ -101,7 +90,9 @@ skincare-store/
 │   ├── prod2.webp
 │   ├── prod3.webp
 │   └── prod4.webp
-├── screenshots/
+├── screens/
+│   ├──  desktop-home.png
+│   ├──  desktop-produtos.png
 └── README.md
 ```
 
@@ -153,8 +144,7 @@ npx live-server
 ```
 
 ### 🎯 Dispositivos Testados
-- ✅ iPhone 12/13/14 (375px)
-- ✅ iPad (768px)
+
 - ✅ Desktop HD (1920px)
 - ✅ Desktop 4K (3840px)
 
@@ -192,6 +182,9 @@ npx live-server
 │   ├── 🛍️ prod2.webp          # Produto 2
 │   ├── 🛍️ prod3.webp          # Produto 3
 │   └── 🛍️ prod4.webp          # Produto 4
+├── 📱 screenshots/            # Capturas de tela
+│   ├── 🖥️ desktop-home.png
+│   ├── 🖥️ desktop-produtos.png
 └── 📖 README.md               # Documentação
 ```
 
