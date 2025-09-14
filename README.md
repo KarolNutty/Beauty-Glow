@@ -26,10 +26,10 @@
 ## 📸 Screenshots
 
 ### 🖥️ Desktop
-![Desktop Preview](./screens/desktop-home.png)
+![Desktop Preview](./screenshots/desktop-home.png)
 *Página inicial desktop com banner e produtos em destaque*
 
-![Desktop Products](./screens/desktop-produtos.png)
+![Desktop Products](./screenshots/desktop-produtos.png)
 *Seção de produtos com efeitos glassmorphism*
 
 ---
