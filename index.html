@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Glow - Beleza Natural Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Beauty Glow Store</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <div class="cart" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <section id="home" class="banner">
+    <div class="slides">
+      <img src="img/banner1.png" alt="Promoção 1" class="active">
+      <img src="img/banner2.png" alt="Promoção 2">
+      <img src="img/banner3.png" alt="Promoção 3">
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+  </section>
+
+  <section class="lancamentos">
+    <h2>🆕 Lançamentos</h2>
+    <div class="lancamentos-container">
+      <div class="produto-novo">
+        <img src="img/prod1.webp" alt="Creme Facial Hidratante">
+        <h3>Creme Facial Hidratante</h3>
+        <p>R$ 89,90</p>
+        <button onclick="addToCart('Creme Facial Hidratante', 89.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto-novo">
+        <img src="img/prod2.webp" alt="Sérum Anti-idade">
+        <h3>Sérum Anti-idade</h3>
+        <p>R$ 129,90</p>
+        <button onclick="addToCart('Sérum Anti-idade', 129.90)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="produtos-container">
+      <div class="produto">
+        <img src="img/prod3.webp" alt="Máscara Facial Revitalizante">
+        <h3>Máscara Facial Revitalizante</h3>
+        <p>R$ 49,90</p>
+        <button onclick="addToCart('Máscara Facial Revitalizante', 49.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="img/prod4.webp" alt="Hidratante Labial">
+        <h3>Hidratante Labial</h3>
+        <p>R$ 29,90</p>
+        <button onclick="addToCart('Hidratante Labial', 29.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="img/prod1.webp" alt="Tônico Facial Refrescante">
+        <h3>Tônico Facial Refrescante</h3>
+        <p>R$ 59,90</p>
+        <button onclick="addToCart('Tônico Facial Refrescante', 59.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="img/prod2.webp" alt="Esfoliante Suave">
+        <h3>Esfoliante Suave</h3>
+        <p>R$ 39,90</p>
+        <button onclick="addToCart('Esfoliante Suave', 39.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="img/prod3.webp" alt="Protetor Solar FPS 60">
+        <h3>Protetor Solar FPS 60</h3>
+        <p>R$ 79,90</p>
+        <button onclick="addToCart('Protetor Solar FPS 60', 79.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="img/prod4.webp" alt="Óleo Facial Nutritivo">
+        <h3>Óleo Facial Nutritivo</h3>
+        <p>R$ 89,90</p>
+        <button onclick="addToCart('Óleo Facial Nutritivo', 89.90)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="detalhes-produto">
+    <div class="produto-info">
+      <img src="img/prod1.webp" alt="Creme Facial Hidratante">
+      <div>
+        <h3>Creme Facial Hidratante</h3>
+        <p><strong>Benefícios:</strong> Hidratação profunda, textura leve e rápida absorção. Rico em ácido hialurônico.</p>
+        <p><strong>Dica:</strong> Aplicar diariamente de manhã e à noite sobre a pele limpa.</p>
+      </div>
+    </div>
+    <div class="produto-info">
+      <img src="img/prod2.webp" alt="Sérum Anti-idade">
+      <div>
+        <h3>Sérum Anti-idade</h3>
+        <p><strong>Benefícios:</strong> Redução de linhas finas, melhora da firmeza da pele e luminosidade natural.</p>
+        <p><strong>Dica:</strong> Aplicar algumas gotas antes do hidratante, preferencialmente à noite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cuidados-pele">
+    <h2>💎 Dicas para Cuidados com a Pele</h2>
+    <ul>
+      <li>Realize limpeza diária adequada ao seu tipo de pele</li>
+      <li>Use protetor solar diariamente, mesmo em dias nublados</li>
+      <li>Mantenha a pele sempre hidratada com produtos de qualidade</li>
+      <li>Remova completamente a maquiagem antes de dormir</li>
+      <li>Beba bastante água para manter a pele saudável por dentro</li>
+      <li>Durma pelo menos 8 horas por noite para regeneração celular</li>
+    </ul>
+  </section>
+
+  <section id="depoimentos" class="depoimentos">
+    <h2>💬 Depoimentos</h2>
+    <div class="depoimentos-container">
+      <div class="depoimento">
+        <p>"Os produtos são incríveis! Minha pele ficou muito mais hidratada e luminosa."</p>
+        <span>- Maria Silva ⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="depoimento">
+        <p>"O sérum anti-idade realmente funciona! Já vejo diferença nas linhas de expressão."</p>
+        <span>- Ana Costa ⭐⭐⭐⭐⭐</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div id="sobre">
+      <p><strong>Sobre nós:</strong> Somos especializados em produtos de skincare de alta qualidade para cuidar da sua beleza natural.</p>
+      <p>&copy; 2025 Skincare Store | Desenvolvido por Karol 💻</p>
+      <p>📱 Instagram | 🎵 TikTok | 📞 WhatsApp</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
